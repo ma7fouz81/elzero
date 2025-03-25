@@ -13,4 +13,4 @@ PRINT 'we love php ';
 
 <?php
 echo "my name is ahmed "; //single line code
-echo "my name is ahmed "; #single line code
+echo "my name is ahmed "; #single line code ..

@@ -680,6 +680,8 @@ echo '<br>';
 $b= 0 or false; // (0) or false
 echo $b; // false 0
 
+echo '<br>';
+
 //8- Error Control Operator
 
 // $a=10;

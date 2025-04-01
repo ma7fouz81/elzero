@@ -82,10 +82,10 @@ echo "<br>";
 var_dump((bool) 10); // bool(true)
 echo "<br>";
 var_dump((bool) -10); // bool(true)
-?>
+// ?>
 
-<!-- String And Escaping -->
-<?php
+// <!-- String And Escaping -->
+// <?php
 echo "'PHP'"; // Outputs: 'PHP'
 echo '<br>';
 echo '"PHP"'; // Outputs: "PHP"
@@ -130,10 +130,10 @@ $ulinks = <<<ullinks
 </ul>
 ullinks;
 echo $ulinks;
-?>
+// ?>
 
-<!-- Array Example -->
-<?php
+// <!-- Array Example -->
+// <?php
 echo "///////////////////////////////////////////////////////////////////////";
 
 echo '<pre>';
@@ -480,9 +480,9 @@ echo gettype(-"-100");
 echo '<br>';
 echo "*******************************************";
 echo '<br>';
-?>
+// ?>
 
-<?php
+// <?php
 //1- Assignment Operators
 $a = 10;
 // $a = $a + 20;

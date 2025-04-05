@@ -1,161 +1,161 @@
-<?php
+ <?php
 
 //1- If, Elseif, Else - Basics
 
-// if(10 < 5)
-// {
-//     echo "First Condition is True";
-// }
-// elseif(10 > 5)
-// {
-//     echo "Second Condition is True";
-// }
-// else{
-//     echo "False";
-// }
+if(10 < 5)
+{
+    echo "First Condition is True";
+}
+elseif(10 > 5)
+{
+    echo "Second Condition is True";
+}
+else{
+    echo "False";
+}
 
-// echo '<br>';
+echo '<br>';
 
-// $Page="Home";
+$Page="Home";
 
-// if($Page=="Home")
-// {
-//     echo "Hello, this is the page";
-// }
+if($Page=="Home")
+{
+    echo "Hello, this is the page";
+}
 
-// echo '<br>';
+echo '<br>';
 
-// $lang="Arabic";
-// if($lang=="Arabic")
-// {
-//     echo "مرحبا";
-// }
-// elseif ($lang=="English")
-// {
-//     echo "Hello";
-// }
-// else{
-//     echo "UnKnown language";
-// }
+$lang="Arabic";
+if($lang=="Arabic")
+{
+    echo "مرحبا";
+}
+elseif ($lang=="English")
+{
+    echo "Hello";
+}
+else{
+    echo "UnKnown language";
+}
 
-// echo '<br>';
+echo '<br>';
 
-// $title="";
-// if($title == "")
-// {
-//     echo "Unknown title";
-// }
-// else{
-//     echo $title;
-// }
+$title="";
+if($title == "")
+{
+    echo "Unknown title";
+}
+else{
+    echo $title;
+}
 
-// echo '<br>';
+echo '<br>';
 
 //2- Nested if
 
 // 1-first scenario
-// $name = "Ahmed";
-// $is_student = true;
-// $is_orphan = true;
-// $country = "Egypt";
-// $country_discount = 50;
-// $price = 100;
-// $student_discount = 10;
-// $orphan_discount = 15;
-
-// //ifهنا هيطبع رسايل ال
-// if($country=="Egypt"){
-//     if($is_student==true){
-//         echo "Hello $name";
-//         echo '<br>';
-//         echo "Price is $price";
-//         echo '<br>';
-//         echo "student_discount is".$price-$student_discount-$country_discount; // 40
-//     }
-// }
-// else{
-//     echo "Hello $name";
-//     echo '<br>';
-//     echo "the final Price is $price";
-// }
-
-// echo '<br>';
-
-// // elseهنا هيطبع رسايل ال
-// if($country=="KSA"){
-//     if($is_student==true){
-//         echo "Hello $name";
-//         echo '<br>';
-//         echo "Price is $price";
-//         echo '<br>';
-//         echo "student_discount is".$price-$student_discount;
-//     }
-// }
-// else{
-//     echo "Hello $name";
-//     echo '<br>';
-//     echo "the final Price is $price"; //100
-// }
-
-// echo '<br>';
-// echo "********************";
-// echo '<br>';
-
-//2-second scenario
-// $name = "Ahmed";
-// $is_student = false;
-// $is_orphan = false;
-// $country = "Egypt";
-// $country_discount = 50;
-// $price = 100;
-// $student_discount = 10;
-// $orphan_discount = 15;
+$name = "Ahmed";
+$is_student = true;
+$is_orphan = true;
+$country = "Egypt";
+$country_discount = 50;
+$price = 100;
+$student_discount = 10;
+$orphan_discount = 15;
 
 //ifهنا هيطبع رسايل ال
-// if($country=="Egypt"){
-//     if($is_student==true){
-//         if($orphan_discount==true)
-//         {
-//         echo "Hello $name";
-//         echo '<br>';
-//         echo "course Price is $price";
-//         echo '<br>';
-//         echo "student_discount is".$price-$student_discount-$country_discount;
-//         echo "orphan_discount is ".$price-$student_discount-$orphan_discount-$country_discount;
-//         }
-//     }
-// }
-// else{
-//     echo "Hello $name";
-//     echo '<br>';
-//     echo "the final Price is $price";
-// }
+if($country=="Egypt"){
+    if($is_student==true){
+        echo "Hello $name";
+        echo '<br>';
+        echo "Price is $price";
+        echo '<br>';
+        echo "student_discount is".$price-$student_discount-$country_discount; // 40
+    }
+}
+else{
+    echo "Hello $name";
+    echo '<br>';
+    echo "the final Price is $price";
+}
 
-// echo '<br>';
+echo '<br>';
 
 // elseهنا هيطبع رسايل ال
-// if($country=="KSA"){
-//     if($is_student==true){
-//         if($orphan_discount==true)
-//         {
-//         echo "Hello $name";
-//         echo '<br>';
-//         echo "course Price is $price";
-//         echo '<br>';
-//         echo "student_discount is".$price-$student_discount-$country_discount;
-//         echo "orphan_discount is ".$price-$student_discount-$orphan_discount-$country_discount;
-//         }
-//     }
-// }
-// else{
-//     echo "Hello $name";
-//     echo '<br>';
-//     echo "the final Price is" .$price-$country_discount;
-// }
+if($country=="KSA"){
+    if($is_student==true){
+        echo "Hello $name";
+        echo '<br>';
+        echo "Price is $price";
+        echo '<br>';
+        echo "student_discount is".$price-$student_discount;
+    }
+}
+else{
+    echo "Hello $name";
+    echo '<br>';
+    echo "the final Price is $price"; //100
+}
 
-// echo '<br>';
-// echo "********************";
-// echo '<br>';
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// 2-second scenario
+$name = "Ahmed";
+$is_student = false;
+$is_orphan = false;
+$country = "Egypt";
+$country_discount = 50;
+$price = 100;
+$student_discount = 10;
+$orphan_discount = 15;
+
+// ifهنا هيطبع رسايل ال
+if($country=="Egypt"){
+    if($is_student==true){
+        if($orphan_discount==true)
+        {
+        echo "Hello $name";
+        echo '<br>';
+        echo "course Price is $price";
+        echo '<br>';
+        echo "student_discount is".$price-$student_discount-$country_discount;
+        echo "orphan_discount is ".$price-$student_discount-$orphan_discount-$country_discount;
+        }
+    }
+}
+else{
+    echo "Hello $name";
+    echo '<br>';
+    echo "the final Price is $price";
+}
+
+echo '<br>';
+
+// elseهنا هيطبع رسايل ال
+if($country=="KSA"){
+    if($is_student==true){
+        if($orphan_discount==true)
+        {
+        echo "Hello $name";
+        echo '<br>';
+        echo "course Price is $price";
+        echo '<br>';
+        echo "student_discount is".$price-$student_discount-$country_discount;
+        echo "orphan_discount is ".$price-$student_discount-$orphan_discount-$country_discount;
+        }
+    }
+}
+else{
+    echo "Hello $name";
+    echo '<br>';
+    echo "the final Price is" .$price-$country_discount;
+}
+
+echo '<br>';
+echo "********************";
+echo '<br>';
 
 //3-  Ternary Conditional Operator
 
@@ -411,4 +411,280 @@ $a=20;
 include_once("test.php"); // $a = 10
 echo $a .'<br>'; // 20
 
-echo"continue"; // continue
+echo"continue"; // continue 
+
+
+// echo '<br>';
+// echo "********************";
+// echo '<br>';
+
+// problem_1:
+$a = 100;
+$b = 200;
+$c = 100;
+
+if($b>$a){
+    if($a==$c){
+        if(($a+$c)===$b){
+            echo"Yes";
+        }
+    }
+}
+
+//   Check That:
+//   Variable "b" Larger Than Variable "a"
+//   Variable "a" Identical To Variable "c"
+//   Variable "a" Plus Variable "c" Identical To Variable "b"
+
+// "Yes"
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_2:
+
+// Test Case 1
+$a = 100;
+$b = 200;
+$c = 300;
+if($a>$b)
+{
+    echo "A is Larger than B";
+}
+elseif($a>$c){
+    echo "A is Larger than B";
+}
+else{
+    echo"A Is Not Larger Than B Or C";
+}
+// A Is Not Larger Than B Or C
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_3:
+
+$a = 30;
+$b = 20;
+$c = 10;
+
+if ($a + $b === $c) {
+
+  echo "A + B = C";
+
+} elseif ($a + $c === $b) {
+
+  echo "A + C = B";
+
+} elseif ($b + $c === $a) {
+
+  echo "B + C = A";
+
+} else {
+
+  echo "The End";
+
+}
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+echo ($a + $b === $c)?"A + B = C":
+     (($a + $c === $b)?"A + C = B":
+     (($b + $c === $a)?"B + C = A":"The End"));
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_4:
+$name = "Osama";
+$age = 40;
+$country = "Egypt";
+
+if ($age > 18) {
+  echo "The Age Is Good To Go<br>";
+  if (gettype($name) === "string") {
+    echo "The Name Is Good To Go<br>";
+    if ($country === "Egypt") {
+      echo "The Country Is Good To Go<br>";
+    }
+  }
+}
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+echo ($age > 18)?"The Age Is Good To Go<br>".
+     ((gettype($name) === "string")?"The Name Is Good To Go<br>".
+     (($country === "Egypt")?"The Country Is Good To Go<br>": "")
+     :"")
+    :"";
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_5:
+     $genre = "Hack And Slash";
+
+     if ($genre === "RPG") {
+     
+       echo "I Recommend Ys Games";
+     
+     } elseif ($genre === "Hack And Slash") {
+     
+       echo "I Recommend Castlevania Games";
+     
+     } elseif ($genre === "FPS") {
+     
+       echo "I Recommend Uncharted Games";
+     
+     } elseif ($genre === "Platform") {
+     
+       echo "I Recommend Megaman Games";
+     
+     } elseif ($genre === "Puzzle") {
+     
+       echo "I Recommend Megaman Games";
+     
+     } else {
+     
+       echo "I Recommend Shadow Of Mordor And Shadow Of War";
+     
+     }
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+$genre = "Hack And Slash";
+
+switch($genre)
+{
+    case"RPG":
+        echo "I Recommend Ys Games";
+        break;
+    case"Hack And Slash":    
+        echo "I Recommend Castlevania Games";
+        break;
+
+    case"FPS": 
+       echo "I Recommend Uncharted Games";    
+       break;
+       
+     case"Platform":
+        echo "I Recommend Megaman Games";
+        break;
+    case"Puzzle":
+        echo"I Recommend Megaman Games";
+        break;
+    default:
+        echo "I Recommend Shadow Of Mordor And Shadow Of War";    
+
+}
+     
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_6:
+
+$num_one = 23;
+$num_two = 5;
+$op = "/";
+
+if($op =="+")
+{
+    echo $num_one+$num_two;
+}
+elseif($op=="-")
+{
+    echo $num_one-$num_two;
+}
+elseif($op=="*")
+{
+    echo $num_one*$num_two;
+}
+elseif($op=="/"){
+    if($num_two != 0){
+        echo intdiv($num_one,$num_two); //Integer division
+        echo '<br>'; // 
+        echo $num_one % $num_two; // Remainder
+    }
+    else{
+        echo "Cannot divide by zero";
+    }
+}
+else {
+    echo "Unknown Operation";
+}
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_7:
+
+$index = 10;
+
+for($index=10;$index>0;$index--)
+{
+    echo  $index.'<br>';
+  
+}
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_8:
+
+$index = 0;
+
+for($index=2;$index<=20;$index+=2)
+{
+    echo  $index.'<br>';
+}
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_9:
+
+$num = 2;
+while ($num < 520) {
+    if ($num == 2) {
+        echo "1<br>";
+        $num = 1;
+    }
+    
+    $num = $num * 2 + 2;
+    echo $num . "<br>";
+    
+    if ($num == 382) {
+        break;
+    }
+}
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_10:
+
+$start = 10;
+$end = 0;
+$stop = 3;
+
+for ($i = $start; $i >= $stop; $i--) {
+    if ($i < 10) {
+        echo "0" . $i . "<br>";
+    } else {
+        echo $i . "<br>";
+    }
+}
+

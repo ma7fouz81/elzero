@@ -2,7 +2,7 @@
 
 //1- If, Elseif, Else - Basics
 
-if(10 < 5)
+/*if(10 < 5)
 {
     echo "First Condition is True";
 }
@@ -687,4 +687,101 @@ for ($i = $start; $i >= $stop; $i--) {
         echo $i . "<br>";
     }
 }
+*/
+
+// problem_11:
+
+$start = 0;
+$mix = [1, 2, 3, "A", "B", "C", 4];
+
+foreach ($mix as $value) {
+    if ($value == 1 || gettype($value) != "integer") {
+        continue;
+    }
+    echo $value . "<br>";
+}
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_12:
+$money = ["Ahmed" => 100, "Sayed" => 150, "Osama" => 100, "Maher" => 250];
+
+foreach ($money as $key => $value) {
+    echo "The Name Is $key And I Need $value Pound From Him<br>";
+}
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+$mix = [1, 2, "A", "B", "C", 3, 4];
+
+$numbers_count=0;
+$letters_count=0;
+foreach($mix as $value){
+    if(is_numeric($value)){
+        echo $value.'<br>';
+        $numbers_count++;
+    }
+    else{
+        $letters_count++;
+    }
+}
+echo "\"$numbers_count Numbers Printed\"<br>";
+echo "\"$letters_count Letters Ignored\"<br>";
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_13:
+
+$nums = [1, 13, 12, 20, 51, 17, 30];
+
+foreach($nums as $num){
+    if($num %2==0){
+        echo $num / 2 . '<br>';
+    }
+}
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_14:
+
+$help_num = 3;
+$nums = [4, 5, 6, 1, 2, 3];
+$names = ["Ahmed", "Sayed", "Osama", "Mahmoud", "Gamal"];
+
+$count = $nums[$help_num]; //1
+$end = $count + $nums[$help_num]; // 1 + 1 = 2 
+
+for ($i = $count; $i <= $end; $i++) {
+    echo $names[$i] . "<br>";
+}
+
+echo '<br>';
+echo "********************";
+echo '<br>';
+
+// problem_15:
+
+$help_num = 4;
+$nums = [2, 4, 5, 6, 10];
+
+for ($i = 0; $i < count($nums); $i++) {
+    for ($j = 0; $j < count($nums); $j++) {
+        $sum = $nums[$i] + $nums[$j];
+        if ($sum == 10 || $sum == 12) {
+            echo "{$nums[$i]} + {$nums[$j]} = $sum<br>";
+        }
+    }
+}
+
+
+
+
 

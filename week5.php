@@ -2,7 +2,7 @@
 
 //1- If, Elseif, Else - Basics
 
-/*if(10 < 5)
+if(10 < 5)
 {
     echo "First Condition is True";
 }
@@ -687,7 +687,7 @@ for ($i = $start; $i >= $stop; $i--) {
         echo $i . "<br>";
     }
 }
-*/
+
 
 // problem_11:
 

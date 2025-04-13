@@ -1,7 +1,7 @@
 <?php
 //string
 //1- String Access And Update Elements
-/*
+
 $str="Ahmed";
 echo $str[0].'<br>';
 echo $str[3].'<br>';
@@ -262,7 +262,7 @@ echo "<br>";
 echo number_format(1000000.2545,2);
 echo "<br>";
 echo number_format(1000000.2545,2,"^");
-*/
+
 
 // problem_1
 

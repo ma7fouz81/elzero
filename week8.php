@@ -1,7 +1,7 @@
 <?php
 
 //Array Functions P1
-/*
+
 $friends=["Ahmed","Mohammed","Mahmoud","Ali","Amr"];
 echo '<pre>';
 print_r(array_chunk($friends,2));
@@ -190,7 +190,7 @@ print_r(array_replace($main3,$replace3));
 echo '</pre>';
 */############
 
-/*
+
 $nums=["A","B","C","D","E"];
 echo array_rand($nums).'<br>'; // print index of number not number
 echo $nums[array_rand($nums)]; //print number 
@@ -419,7 +419,7 @@ function add($carry, $item) {
 $nums = [10, 20, 50, 100, 10];
 
 echo array_reduce($nums, "add", 100);
-*/
+
 #############################################
 
 //problem_1

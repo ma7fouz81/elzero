@@ -113,7 +113,7 @@ echo mb_strlen("I Love PHP \r\n"); // 13
 fclose($handle);
 
 echo "<br>************************<br>";
-
+/*
 echo '<pre>';
 print_r(glob("*.*"));
 echo '<pre>';
@@ -124,15 +124,19 @@ echo '<pre>';
 
 // rename => same place
 
-rename("old/elzero.txt", "old/Elzero.txt");
+rename("Old/work.txt", "Old/working.txt");
 
 // Rename => Other Place => "Cut" || "Move"
 
-rename("old/elzero.txt", "New/Testing_2.txt");
+rename("Old/working.txt", "New/working_2.txt");
 
-// Move To Other Place
+// // Move To Other Place
 
-rename("Old/Elzero.pptx", "New/Elzero.pptx");
+rename("Old/ahmed.pptx", "New/ahmed.pptx");
 
 
+copy("Old/info.docx", "New/info.docx");
+
+unlink("Old/info.txt"); 
+*/
 

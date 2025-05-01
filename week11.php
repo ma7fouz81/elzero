@@ -33,7 +33,7 @@ s => 00-59
 u => Microseconds
 
  */
-/*
+
 echo date_default_timezone_get().'<br>';
 
 echo date("Y-m-d H:i:s").'<br>';
@@ -137,7 +137,7 @@ echo date("Y-m-d H:i:s", strtotime("+1 year")) . "<br>";
 echo date("Y-m-d H:i:s", strtotime("tomorrow")) . "<br>";
 echo date("Y-m-d M D H:i:s", strtotime("tomorrow", strtotime("1982-10-25"))) . "<br>";
 echo "*************************<br>";
-*/
+
 //problems
 
 //problem_1

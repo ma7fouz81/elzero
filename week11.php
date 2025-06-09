@@ -207,3 +207,29 @@ echo "<br>*************************<br>";
 echo time() . "<br>";
 echo strtotime("now") . "<br>";
 //1746100118
+
+echo "<br>*************************<br>";
+// str_replace Examples
+
+// Basic string replacement
+$text = "Hello World";
+$result = str_replace("World", "PHP", $text);
+echo "Basic replacement: " . $result . "<br>"; // Output: Hello PHP
+
+// Multiple replacements at once
+$text2 = "I love cats. Cats are cute. CATS are amazing.";
+$result2 = str_replace(["cats", "CATS"], "dogs", $text2);
+echo "Multiple replacements: " . $result2 . "<br>"; // Output: I love dogs. Cats are cute. dogs are amazing.
+
+// Case-sensitive replacements with count
+$text3 = "apple apple APPLE";
+$count = 0;
+$result3 = str_replace("apple", "orange", $text3, $count);
+echo "Case-sensitive replacement: " . $result3 . "<br>"; // Output: orange orange APPLE
+echo "Number of replacements: " . $count . "<br>"; // Output: 2
+
+// Array replacement
+$fruits = ["apple", "banana", "orange"];
+$result4 = str_replace("a", "X", $fruits);
+echo "Array replacement: ";
+print_r($result4); // Output: Array ( [0] => Xpple [1] => bXnXnX [2] => orXnge )

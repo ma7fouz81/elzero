@@ -1,7 +1,7 @@
 <?php
 
 //1- Function
-/*
+
 function Hello($name){
     echo "Hello Mr $name <br>";
 }
@@ -254,7 +254,7 @@ $nums_after_adding_ten = array_map(function($item) { return $item + 10;}, $nums)
 echo '<pre>';
 print_r($nums_after_adding_ten);
 echo '</pre>';
-*/
+
 //////////////////////////////////////////////////////////////
 
 //problem_1:

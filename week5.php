@@ -491,9 +491,7 @@ echo '<br>';
 echo "********************";
 echo '<br>';
 
-echo ($a + $b === $c)?"A + B = C":
-     (($a + $c === $b)?"A + C = B":
-     (($b + $c === $a)?"B + C = A":"The End"));
+echo ($a + $b === $c)?"A + B = C":(($a + $c === $b)?"A + C = B":(($b + $c === $a)?"B + C = A":"The End"));
 
 echo '<br>';
 echo "********************";
@@ -517,11 +515,7 @@ echo '<br>';
 echo "********************";
 echo '<br>';
 
-echo ($age > 18)?"The Age Is Good To Go<br>".
-     ((gettype($name) === "string")?"The Name Is Good To Go<br>".
-     (($country === "Egypt")?"The Country Is Good To Go<br>": "")
-     :"")
-    :"";
+echo ($age > 18)?"The Age Is Good To Go<br>".((gettype($name) === "string")?"The Name Is Good To Go<br>".(($country === "Egypt")?"The Country Is Good To Go<br>": ""):""):"";
 
 echo '<br>';
 echo "********************";
@@ -658,7 +652,7 @@ echo '<br>';
 $num = 2;
 while ($num < 520) {
     if ($num == 2) {
-        echo "1<br>";
+        echo "1 <br>";
         $num = 1;
     }
     

@@ -59,6 +59,7 @@ echo '<br>';
 echo (int)(10.5+10.5); // Outputs: 21
 echo '<br>';
 echo gettype((int)(10.5+10.5)); // Outputs: integer
+echo '<br>';
 ?>
 
 <!-- Boolean And Converting To Boolean -->
@@ -105,6 +106,7 @@ Lines'); // Converts newlines to <br> tags
 
 <!-- Heredoc And Nowdoc -->
 <?php
+
 $name = "Ahmed";
 
 // Heredoc - parses variables and special characters
@@ -123,18 +125,24 @@ Special Chars $$$ \\\\
 My Name Is $name
 Now;
 
-// Another example with HTML
-$ulinks = <<<ullinks
-<ul>
-    <li> $name</li>
-</ul>
-ullinks;
-echo $ulinks;
-// ?>
+echo '<ul>';
+echo "<li>".$name."</li>";
+echo "<li>".$name."</li>";
+echo '</ul>';
 
-// <!-- Array Example -->
-// <?php
-echo "///////////////////////////////////////////////////////////////////////";
+echo '<br>';
+
+echo <<<"navlinks"
+<ul>
+<li>$name</li>
+<li>$name</li>
+</ul>
+navlinks;
+ ?>
+
+ <!-- Array Example -->
+ <?php
+echo "////////////////////Array Example///////////////////////////////////////////////////";
 
 echo '<pre>';
 print_r([

@@ -247,11 +247,11 @@ echo strstr("Elzero Web", "z") . "<br>";        // zero Web
 echo strstr("Elzero Web", "W", True) . "<br>";  // Elzero
 echo strlen(strstr("Elzero Web", "W", True)) . "<br>"; // 7
 
-echo strstr("Elzero Web", "w") . "<br>";        // False
+echo strstr("Elzero Web", "w") . "<br>";        // False sensetive case
 var_dump(strstr("Elzero Web", "w"));
 echo "<br>";
 
-echo strstr("Elzero Web", "w") . "<br>";        // False
+echo strstr("Elzero Web", "w") . "<br>";        // False sensetive case
 var_dump(strstr("Elzero Web", "W"));
 echo "<br>";
 
